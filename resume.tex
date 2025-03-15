@@ -1,71 +1,89 @@
-\documentclass{resume} % Use the custom resume.cls style
+\documentclass{resume}
 \usepackage[english]{babel}
 \usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.4in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{Daniel Spiridonov} % Your name
-% You can merge both of these into a single line, if you do not have a website.
-\address{+7(936) 505-1245 \\ Moscow, Russia} 
+\name{Даниил Спиридонов}
+\address{+7(936) 505-1245 \\ Москва, Россия} 
 \address{\href{mailto:sprv-4@yandex.ru}{sprv-4@yandex.ru} \\ \href{https://github.com/notaskynet}{github.com/notaskynet}}  %
 \begin{document}
+
 %----------------------------------------------------------------------------------------
-%	OBJECTIVE
+%	ABOUT ME
 %----------------------------------------------------------------------------------------
-\begin{rSection}{ABOUT ME}
-hello!fffff
-Third-year student in the "Cfffffomputer Security" program at HSE University. Actively involved in projects and hackathons, with a strong interest in developing expertise in Data Science, Machine Learning, and Deep Learning.
+\begin{rSection}{ОБО МНЕ}
+Студент 3 курса ОП "Компьютерная безопасность" в НИУ ВШЭ. Развиваюсь в ML/DS направлении, участвую в хакатонах.
 \end{rSection}
+
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-\begin{rSection}{EDUCATION}
-{\bf Specialist Degree, Computer Security Program \\ National Research University Higher School of Economics (HSE)}, \hfill {Expected in 2028}\\
-\textit{Moscow Institute of Electronics and Mathematics named after A.N. Tikhonov} 
+\begin{rSection}{ОБРАЗОВАНИЕ}
+{\bf Специалитет, Образовательная программа "Компьютерная безопасность" \\ Национальный исследовательский университет Высшая школа экономики (НИУ ВШЭ)}, \hfill {Ожидается в 2028}\\
+\textit{Московский институт электроники и математики им. А.Н. Тихонова} 
 \end{rSection}
+
 %----------------------------------------------------------------------------------------
 % TECHNICAL SKILLS	
 %----------------------------------------------------------------------------------------
-\begin{rSection}{SKILLS}
+\begin{rSection}{НАВЫКИ}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming: & Python, C++ \\
-Machine Learning: & sklearn, PyTorch, CatBoost, XGBoost, Scikit-learn \\
-Data Analysis: & Pandas, NumPy, SQL (basic level) \\
-Tools: & Docker, Git \\
+Программирование: & Python, C++ \\
+Машинное обучение: & CatBoost, XGBoost, Transformers, LangChain, PyTorch, Scikit-Learn \\
+Аналитика данных: & Pandas, NumPy, SQL \\
+Инструменты: & Docker, Git, Airflow, MLflow, GitHub CI/CD \\
 \end{tabular}
 \end{rSection}
+
 %----------------------------------------------------------------------------------------
 % EXPERIENCE
 %----------------------------------------------------------------------------------------
-\begin{rSection}{PROJECTS}
-\textbf{Claw Engine: Artificial Intelligence Module} \\
-\textit{HSE University} 
+\begin{rSection}{ОПЫТ РАБОТЫ}
+
+\textbf{ML Engineer}  
+\textit{РТ-Информационная безопасность} | Дек 2024 – по настоящее время  
 \begin{itemize}
     \itemsep -3pt {} 
-    \item Adapted a graph neural network-based model from the previous year to address the current task.
-    \item Implemented data collection and visualization tools to evaluate model performance.
-\end{itemize}
-\textbf{HSE Project: Self-Task Generator for Algebra} \\
-\textit{HSE University} 
-\begin{itemize}
-    \itemsep -3pt {} 
-    \item Developed additional functionality for a library handling matrices and polynomials in C++.
-    \item Utilized GitLab for project management and version control.
-\end{itemize}
-\textbf{hh.ru Job Vacancy Analyzer} \\
-\textit{Personal Project} 
-\begin{itemize}
-    \itemsep -3pt {} 
-    \item Designed a web scraper to collect job postings from hh.ru, bypassing anti-bot measures effectively.
-    \item Processed and analyzed data to identify key skills and requirements across job listings.
-    \item Created an aggregation system to compile a "median" set of qualifications from multiple vacancies.
-    \item Developed visualizations to analyze trends in required skills and working conditions.
+    \item Разработал и развернул модели машинного обучения для работы инцидентами информационной безопасности.
+    \item Проектировал и реализовывал пайплайны сбора и обработки данных.
 \end{itemize}
 
-\textbf{Hackathons}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{ПРОЕКТЫ}
+
+\textbf{Claw Engine: Модуль Искусственного Интеллекта}  
+\textit{НИУ ВШЭ}  
 \begin{itemize}
     \itemsep -3pt {} 
-    \item Participated in Ozon Tech Hackathon, developing a VGG16-based model for cigarette detection in images.
-    \item Contributed to HSE AI Assistant Hackathon, adapting Sber's GigaChat for a specific use case.
+    \item Адаптировал модель на основе графовых нейронных сетей для решения конкретной задачи.
+    \item Реализовал сбор данных и визуализацию для оценки эффективности модели.
+    \item Разработал суммаризатор отзывов в рамках модуля ИИ, анализирующий отзывы и выдающий структурированное содержание по пунктам, с использованием LangChain для обработки естественного языка.
+\end{itemize}
+
+\textbf{Анализатор вакансий на hh.ru}  
+\textit{Pet-Проект}  
+\begin{itemize}
+    \itemsep -3pt {} 
+    \item Разработал парсер для сбора вакансий с hh.ru, обходя анти-бот меры.
+    \item Разработал суммаризацию набора квалификаций из множества вакансий.
+    \item Разработал визуализацию для анализа трендов в требуемых навыках и условиях работы.
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	HACKATHONS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{ХАКАТОНЫ}
+\begin{itemize}
+    \itemsep -3pt {} 
+    \item Участвовал в **Ozon Tech Hackathon**, разработал модель на основе **VGG16** для детекции сигарет на изображениях.
+    \item Участвовал в **HSE AI Assistant Hack**, адаптировал **GigaChat от Сбера** для конкретной задачи.
 \end{itemize}
 \end{rSection}
+
 \end{document}
