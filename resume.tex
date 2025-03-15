@@ -1,0 +1,70 @@
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[english]{babel}
+\usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Daniel Spiridonov} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{+7(936) 505-1245 \\ Moscow, Russia} 
+\address{\href{mailto:sprv-4@yandex.ru}{sprv-4@yandex.ru} \\ \href{https://github.com/notaskynet}{github.com/notaskynet}}  %
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+\begin{rSection}{ABOUT ME}
+Third-year student in the "Computer Security" program at HSE University. Actively involved in projects and hackathons, with a strong interest in developing expertise in Data Science, Machine Learning, and Deep Learning.
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{EDUCATION}
+{\bf Specialist Degree, Computer Security Program \\ National Research University Higher School of Economics (HSE)}, \hfill {Expected in 2028}\\
+\textit{Moscow Institute of Electronics and Mathematics named after A.N. Tikhonov} 
+\end{rSection}
+%----------------------------------------------------------------------------------------
+% TECHNICAL SKILLS	
+%----------------------------------------------------------------------------------------
+\begin{rSection}{SKILLS}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming: & Python, C++ \\
+Machine Learning: & sklearn, PyTorch, CatBoost, XGBoost, Scikit-learn \\
+Data Analysis: & Pandas, NumPy, SQL (basic level) \\
+Tools: & Docker, Git \\
+\end{tabular}
+\end{rSection}
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+\begin{rSection}{PROJECTS}
+\textbf{Claw Engine: Artificial Intelligence Module} \\
+\textit{HSE University} 
+\begin{itemize}
+    \itemsep -3pt {} 
+    \item Adapted a graph neural network-based model from the previous year to address the current task.
+    \item Implemented data collection and visualization tools to evaluate model performance.
+\end{itemize}
+\textbf{HSE Project: Self-Task Generator for Algebra} \\
+\textit{HSE University} 
+\begin{itemize}
+    \itemsep -3pt {} 
+    \item Developed additional functionality for a library handling matrices and polynomials in C++.
+    \item Utilized GitLab for project management and version control.
+\end{itemize}
+\textbf{hh.ru Job Vacancy Analyzer} \\
+\textit{Personal Project} 
+\begin{itemize}
+    \itemsep -3pt {} 
+    \item Designed a web scraper to collect job postings from hh.ru, bypassing anti-bot measures effectively.
+    \item Processed and analyzed data to identify key skills and requirements across job listings.
+    \item Created an aggregation system to compile a "median" set of qualifications from multiple vacancies.
+    \item Developed visualizations to analyze trends in required skills and working conditions.
+\end{itemize}
+
+\textbf{Hackathons}
+\begin{itemize}
+    \itemsep -3pt {} 
+    \item Participated in Ozon Tech Hackathon, developing a VGG16-based model for cigarette detection in images.
+    \item Contributed to HSE AI Assistant Hackathon, adapting Sber's GigaChat for a specific use case.
+\end{itemize}
+\end{rSection}
+\end{document}
